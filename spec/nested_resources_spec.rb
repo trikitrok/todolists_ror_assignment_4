@@ -88,10 +88,10 @@ describe "Module #4: Navigation Tests", :type => :routing do
     context "rq07" do        
     
         before :all do    
-            # TodoItem.destroy_all
-            # TodoList.destroy_all
-            # User.destroy_all
-            # load "#{Rails.root}/db/seeds.rb"  
+            TodoItem.destroy_all
+            TodoList.destroy_all
+            User.destroy_all
+            load "#{Rails.root}/db/seeds.rb"  
         end
 
         subject(:user) {
