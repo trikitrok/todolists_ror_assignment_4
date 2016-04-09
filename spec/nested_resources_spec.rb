@@ -105,6 +105,7 @@ describe "Module #4: Navigation Tests", :type => :routing do
                 li_id = list_item.id
                 # Confirm links in list page are nested and that the
                 # show page results in expected method behavior
+                p todo_list_path(tl_id)
                 visit(todo_list_path(tl_id))
                 expect(page).to have_link('Show', :href => "#{todo_list_todo_item_path(tl_id, li_id)}")
                 click_link('Show', :href => "#{todo_list_todo_item_path(tl_id, li_id)}")
