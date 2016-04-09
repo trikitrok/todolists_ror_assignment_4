@@ -1,11 +1,11 @@
 class TodoItemsController < ApplicationController
   before_action :set_todo_list
-  before_action :set_todo_item, only: [:edit, :update, :destroy]
+  before_action :set_todo_item, only: [:show, :edit, :update, :destroy]
 
   # # GET /todo_list/:todo_list_id/todo_items/1
   # # GET /todo_list/:todo_list_id/todo_items/1.json
-  # def show
-  # end
+  def show
+  end
 
   # GET /todo_list/:todo_list_id/todo_items/new
   def new
